@@ -15,7 +15,11 @@ class Person
       end
     person.partner = self
   end
-
+    class PartnerError < StandardError
+    def message
+      "you must give the get_married method  person class!"
+    end
+  end
 end
 
 beyonce = Person.new("Beyonce")
